@@ -1,1 +1,1 @@
-const avaça = document
+const avaça = document.querySelectorAll
