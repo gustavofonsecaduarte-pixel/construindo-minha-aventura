@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em Busca da Cidade Perdida de Krato</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Em Busca da Cidade Perdida de Krato</h1>
+      <div id="inventory-display" class="inventory">
+        <span>Inventário: </span><span id="inventory-list">Vazio</span>
+      </div>
+    </header>
 
-<body>
     <main>
-        <div class="passo ativo" id="passo-0">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade
-                perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para
-                encontrar essa cidade e eu decidi segui-las!</p>>Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a
-                primeira pista.</p>>Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
+      <div id="story-card" class="card">
+        <h2 id="node-title">Início da Jornada</h2>
+        <p id="story-text">Carregando história...</p>
+        <div id="options-container" class="options"></div>
+      </div>
     </main>
-    <script src="script.js"></script>
-<body>
+
+    <footer>
+      <button id="restart-btn" class="restart-btn hidden">Jogar Novamente</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</html>
